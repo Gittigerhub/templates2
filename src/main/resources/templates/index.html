@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultrag.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/simple}"
+> <!-- 작업파일에서 적용할 레이아웃을 지정 -->
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <div layout:fragment="content" class="container-fluid">
+        <!-- 내용 삭제 후 원하는 내용으로 작업 -->
+        <!-- index파일 작업 파일로 복사해서 작업 -->
+        <h1 class="mt-4">Simple Sidebar</h1>
+        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+        <p>
+            Make sure to keep all page content within the
+            <code>#page-content-wrapper</code>
+            . The top navbar is optional, and just for demonstration. Just create an element with the
+            <code>#sidebarToggle</code>
+            ID which will toggle the menu when clicked.
+        </p>
+    </div>
+</body>
+</html>
